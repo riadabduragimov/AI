@@ -1,11 +1,14 @@
 <h1 align = center>N-Puzzle Solver using A* Search Algorithm</h1> 
 
+---
+
 # Table of Contents
 1. [Project Description](#project-description)
 2. [What I Did](#what-i-did)
 3. [Logging](#logging)
 4. [How to Run the Project](#how-to-run-the-project)
 
+---
 # Project Description
 
 This project implements a solution for the N-puzzle problem, where the goal is to rearrange the tiles of an `n x n` grid to reach a goal configuration using the fewest possible moves. The puzzle consists of numbered tiles (from 1 to N) and one blank space (denoted as 0). The tiles can be moved horizontally and vertically into the blank space.
@@ -14,6 +17,7 @@ The project leverages the A* search algorithm to find the optimal solution for t
 
 The input consists of a file containing the puzzle configuration in an `n x n` grid format. The numbers are separated by tabs, and the blank space is denoted by `0`. An example input file for the 3x3 puzzle (8-puzzle) might look like this:
 
+---
 # What I Did
 
 I implemented the N-puzzle solver using the A* algorithm. Here's a breakdown of the key tasks:
@@ -25,6 +29,7 @@ I implemented the N-puzzle solver using the A* algorithm. Here's a breakdown of 
 - **Input/Output Handling**: The puzzle configurations are read from input files, and the solution steps are saved in output files.
 
 
+---
 # Logging
 
 I used the `logging` module to track the program's execution. The logs are saved in `puzzle_solver.log` and contain details about the puzzle-solving process:
@@ -34,7 +39,7 @@ I used the `logging` module to track the program's execution. The logs are saved
 - Solution saving
 - Errors and warnings
 
-
+---
 # How to Run the Project
 
 Follow these steps to run the project:
