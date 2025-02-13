@@ -1,1 +1,61 @@
+<h1 align = center>N-Puzzle Solver using A* Algorithm</h1> 
+
+# Table of Contents
+1. [Project Description](#project-description)
+2. [What I Did](#what-i-did)
+3. [Logging](#logging)
+4. [How to Run the Project](#how-to-run-the-project)
+
+# Project Description
+
+This project implements a solution for the N-puzzle problem, where the goal is to rearrange the tiles of an `n x n` grid to reach a goal configuration using the fewest possible moves. The puzzle consists of numbered tiles (from 1 to N) and one blank space (denoted as 0). The tiles can be moved horizontally and vertically into the blank space.
+
+The project leverages the A* search algorithm to find the optimal solution for the puzzle. It supports grids ranging from 3x3 to 6x6 and can solve puzzles like the 8-puzzle (3x3 grid) and the 15-puzzle (4x4 grid).
+
+The input consists of a file containing the puzzle configuration in an `n x n` grid format. The numbers are separated by tabs, and the blank space is denoted by `0`. An example input file for the 3x3 puzzle (8-puzzle) might look like this:
+
+# What I Did
+
+I implemented the N-puzzle solver using the A* algorithm. Here's a breakdown of the key tasks:
+
+- **Heuristic Implementation**: I used the Manhattan distance as the heuristic for the A* algorithm. The Manhattan distance calculates the total distance between the current and goal positions of each tile, which guides the search process.
+- **A* Search**: I used A* search to explore all possible states of the puzzle. The algorithm selects the most promising states by prioritizing them based on the sum of the moves taken so far and the estimated distance to the goal (heuristic).
+- **State Representation**: I represented the puzzle as a 2D list (grid), where each number corresponds to a tile, and `0` represents the blank space.
+- **Solvability Check**: The program includes a check to determine if the puzzle is solvable. This check uses the inversion count method, which examines the number of inversions in the puzzle to determine solvability.
+- **Input/Output Handling**: The puzzle configurations are read from input files, and the solution steps are saved in output files.
+
+
+# Logging
+
+I used the `logging` module to track the program's execution. The logs are saved in `puzzle_solver.log` and contain details about the puzzle-solving process:
+
+- Puzzle reading and parsing
+- A* search progress
+- Solution saving
+- Errors and warnings
+
+
+# How to Run the Project
+
+Follow these steps to run the project:
+
+1. **Clone the repository**: 
+   - Use the following command to clone the project repository to your local machine:
+   ```bash
+   git clone <repository-url>
+   ```
+2. **Ensure Python is installed**: 
+   - Make sure that Python is installed on your system.
+
+3. **Add input files**: 
+   - If you have input files, place them into the `input` folder. Ensure the files meet the project requirements.
+
+4. **Run the project**: 
+   - Navigate to the directory containing `main.py` and execute the following command in the terminal:
+     
+   ```bash
+   python main.py
+   ```
+5. **Check the Output**:
+   - After running the script, check the `output/` directory for the solution file.
 
