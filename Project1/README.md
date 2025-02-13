@@ -1,4 +1,4 @@
-<h1 align = center>N-Puzzle Solver using A* Algorithm</h1> 
+<h1 align = center>N-Puzzle Solver using A* Search Algorithm</h1> 
 
 # Table of Contents
 1. [Project Description](#project-description)
@@ -19,7 +19,7 @@ The input consists of a file containing the puzzle configuration in an `n x n` g
 I implemented the N-puzzle solver using the A* algorithm. Here's a breakdown of the key tasks:
 
 - **Heuristic Implementation**: I used the Manhattan distance as the heuristic for the A* algorithm. The Manhattan distance calculates the total distance between the current and goal positions of each tile, which guides the search process.
-- **A* Search**: I used A* search to explore all possible states of the puzzle. The algorithm selects the most promising states by prioritizing them based on the sum of the moves taken so far and the estimated distance to the goal (heuristic).
+- **Algorithm**: I used A* search to explore all possible states of the puzzle. The algorithm selects the most promising states by prioritizing them based on the sum of the moves taken so far and the estimated distance to the goal (heuristic).
 - **State Representation**: I represented the puzzle as a 2D list (grid), where each number corresponds to a tile, and `0` represents the blank space.
 - **Solvability Check**: The program includes a check to determine if the puzzle is solvable. This check uses the inversion count method, which examines the number of inversions in the puzzle to determine solvability.
 - **Input/Output Handling**: The puzzle configurations are read from input files, and the solution steps are saved in output files.
@@ -39,20 +39,25 @@ I used the `logging` module to track the program's execution. The logs are saved
 
 Follow these steps to run the project:
 
-1. **Clone the repository**: 
+1. **Clone the Repository**: 
    - Use the following command to clone the project repository to your local machine:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/riadabduragimov/AI/tree/main/Project1
    ```
-2. **Ensure Python is installed**: 
+2. **Ensure Python is Installed**: 
    - Make sure that Python is installed on your system.
+     ```bash
+     python --version
+     ```
 
-3. **Add input files**: 
-   - If you have input files, place them into the `input` folder. Ensure the files meet the project requirements.
+3. **Add Input Files**: 
+   - If you have input files, place them into the `input` folder. 
+   - The folder already contains 3 sample files, but you can add your own files as long as they meet the project requirements (proper format, size, and content).
 
-4. **Run the project**: 
-   - Navigate to the directory containing `main.py` and execute the following command in the terminal:
-     
+
+4. **Run the Project**  
+    - Navigate to the `src_code` directory and run the following command in your terminal:
+   
    ```bash
    python main.py
    ```
