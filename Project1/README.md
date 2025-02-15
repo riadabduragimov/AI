@@ -7,7 +7,7 @@
 2. [What I Did](#what-i-did)
 3. [Logging](#logging)
 4. [How to Run the Project](#how-to-run-the-project)
-
+5. [Unit Testing the N-Puzzle Solver](#unit-testing-the-n-puzzle-solver)
 ---
 # Project Description
 
@@ -69,3 +69,15 @@ Follow these steps to run the project:
 5. **Check the Output**:
    - After running the script, check the `output/` directory for the solution file.
 
+---
+# Unit Testing the N-Puzzle Solver
+
+I created a `test_puzzle.py` file for testing the key components of the solver and puzzle class. The tests include checking if the puzzle is solvable, testing the solver's ability to find a solution, validating goal state generation, and more.
+
+### To Run the Tests:
+1. Make sure that `unittest` is installed (it is included by default with Python).
+2. In the command line, navigate to the directory containing the `test_puzzle.py` file.
+3. Run the following command to execute the unit tests:
+
+```bash
+python -m unittest test_puzzle.py
