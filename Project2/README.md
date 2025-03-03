@@ -1,5 +1,7 @@
 <h1 align = center>Tile Placement CSP Solver </h1>
 
+---
+
 # Table of Contents
 1. [Introduction](#introduction)
 2. [Classes and Methods](#classes-and-methods)
